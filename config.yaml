@@ -1,0 +1,8 @@
+server:
+  port: 3000
+endpoints:
+  - context: /api
+    forward:
+      protocol: https
+      host: reqres.in
+      rewrite: false
