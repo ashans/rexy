@@ -21,4 +21,4 @@ jobs:
         run: go get
 
       - name: GO build
-        run: go buld .
+        run: go build .
