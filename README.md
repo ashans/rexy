@@ -4,6 +4,8 @@
 
 > Configurable reverse proxy for proxying multiple http services based on context path
 
+[![Build](https://github.com/ashans/rexy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ashans/rexy/actions/workflows/ci.yml)
+
 Add `config.yaml` file to downloaded location with configuration and run binary
 
 ## Sample use cases
