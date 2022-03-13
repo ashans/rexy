@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Setup GO
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Dependency resolve
+        run: go get
+
+      - name: GO build
+        run: go buld .
