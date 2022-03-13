@@ -1,12 +1,17 @@
 # Rexy
 
-## Simple reverse proxy
-
-> Configurable reverse proxy for proxying multiple http services based on context path
-
 [![Build](https://github.com/ashans/rexy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ashans/rexy/actions/workflows/ci.yml)
 
-Add `config.yaml` file to downloaded location with configuration and run binary
+Simple Configurable reverse proxy for proxying multiple http services based on context path
+
+## Build & run
+### Prerequisites
+- GO environment setup
+1. Clone repository
+2. Run `go get`
+3. Run `go build .`
+4. Add `config.yaml` file to downloaded location with configuration and run binary (See examples below)
+5. Execute **rexy** binary
 
 ## Sample use cases
 1. match all requests starts with `/api` and proxy to `reqres.in`   
